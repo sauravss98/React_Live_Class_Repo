@@ -7,12 +7,13 @@ import PropsFunc from "./PropsFunc";
 import State from "./State";
 import Events from "./Events";
 import EventClass from "./EventClass";
+import LifeCycle from "./LifeCycle";
 
 function App() {
   return (
     <div style={{ textAlign: "center" }}>
       <h3>Welcome to react App</h3>
-      <First />
+      {/* <First />
       <ClassComp />
       <FuncComp />
       <PropsClass name="Saurav" age={33}>
@@ -23,7 +24,8 @@ function App() {
       </PropsFunc>
       <State/>
       <Events/>
-      <EventClass/>
+      <EventClass/> */}
+      <LifeCycle/>
     </div>
   );
 }
