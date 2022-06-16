@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import First from "./First";
+import ClassComp from "./ClassComp";
+import FuncComp from "./FuncComp";
+import PropsClass from "./PropsClass";
+import PropsFunc from "./PropsFunc";
+import State from "./State";
+import Events from "./Events";
+import EventClass from "./EventClass";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: "center" }}>
+      <h3>Welcome to react App</h3>
+      <First />
+      <ClassComp />
+      <FuncComp />
+      <PropsClass name="Saurav" age={33}>
+        Hello
+      </PropsClass>
+      <PropsFunc name="Appu" age={12}>
+        Hi there
+      </PropsFunc>
+      <State/>
+      <Events/>
+      <EventClass/>
     </div>
   );
 }
