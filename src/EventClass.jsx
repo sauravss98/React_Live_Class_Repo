@@ -1,18 +1,29 @@
 import React, { Component } from "react";
 
-export default class EventClass extends Component {
+export class EventClass extends Component {
+  constructor() {
+    super();
+    this.clickHandler = this.clickHandler.bind(this);
+  }
   state = {
-    name: "Saurav",
+    name: "Inferno",
   };
-  clickHandler = () => {
+  clickHandler = function (e, name) {
+    console.log(e, name);
     this.setState({ name: "Appu" });
   };
   render() {
     return (
       <div>
-        <h3>Event-{this.state.name}</h3>
+        <p>Events - {this.state.name}</p>
         <input type="text" />
-        <button onClick={(this.clickHandler)}>Click</button>
+        <button
+          onClick={(e) => {
+            this.clickHandler(e, "Saurav");
+          }}
+        >
+          Click
+        </button>
       </div>
     );
   }

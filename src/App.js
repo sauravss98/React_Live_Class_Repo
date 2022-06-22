@@ -6,8 +6,12 @@ import PropsClass from "./PropsClass";
 import PropsFunc from "./PropsFunc";
 import State from "./State";
 import Events from "./Events";
-import EventClass from "./EventClass";
+import {EventClass} from "./EventClass";
 import LifeCycle from "./LifeCycle";
+import Loop from "./Loop";
+import HOC from "./HOC";
+import FormControl from "./FormControl";
+import StateHooks from "./StateHooks";
 
 function App() {
   return (
@@ -24,8 +28,12 @@ function App() {
       </PropsFunc>
       <State/>
       <Events/>
-      <EventClass/> */}
-      <LifeCycle/>
+      <EventClass/>
+      <LifeCycle/> */}
+      {/* <Loop/>  */}
+      {/* <HOC name="Saurav" /> */}
+      <FormControl/>
+      <StateHooks/>
     </div>
   );
 }
